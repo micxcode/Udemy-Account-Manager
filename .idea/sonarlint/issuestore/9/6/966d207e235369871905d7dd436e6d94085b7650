@@ -1,0 +1,5 @@
+
+²
+java:S4449@"›Annotate the parameter with @javax.annotation.Nullable in method 'setTransactionManager' declaration, or make sure that null can not be passed as argument.(µ‘‡³
+Ê
+java:S5301J"®Secure this "ActiveMQConnectionFactory" by whitelisting the trusted packages using the "setTrustedPackages" method and make sure the "setTrustAllPackages" is not set to true.(îÓšüÿÿÿÿ

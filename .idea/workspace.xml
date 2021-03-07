@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="641a5237-1074-408d-8825-833afb5b0a24" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1noHmeILjuGqA8k88zwD5dhLqMs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/groovy" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.46666667" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="review.global.SpringWebApp.repository" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.avenuecode.udemy.account.manager.utils" />
+      <recent name="com.avenuecode.udemy.account.manager.exception" />
+      <recent name="com.avenuecode.udemy.account.manager.bootstrap" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/groovy" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/avenuecode/udemy/account/manager" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle build" />
+      <command value="gradle bootRun" />
+      <command value="gradle --refresh-dependencies" />
+      <command value="gradle clean build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.Tests in 'Udemy-Account-Manager.test'">
+    <configuration name="AccessRequestPublisherSchedulerTest.run() enqueue request_id for requests not yet scheduled in queue named accessRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.avenuecode.udemy.account.manager.publishers.AccessRequestPublisherSchedulerTest.run() enqueue request_id for requests not yet scheduled in queue named accessRequest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AccessRequestPublisherTest.publish() enqueue request_id in queue named accessRequest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.avenuecode.udemy.account.manager.publishers.AccessRequestPublisherTest.publish() enqueue request_id in queue named accessRequest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ActiveSchedulesPublisherSchedulerTest.run() enqueue schedule_id for active schedules in queue named activeSchedule" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.avenuecode.udemy.account.manager.publishers.ActiveSchedulesPublisherSchedulerTest.run() enqueue schedule_id for active schedules in queue named activeSchedule&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ActiveSchedulesPublisherTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.avenuecode.udemy.account.manager.publishers.ActiveSchedulesPublisherTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'Udemy-Account-Manager.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="udemy-account-manager" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="udemy-account-manager" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'Udemy-Account-Manager.test'" />
+        <item itemvalue="Gradle.ActiveSchedulesPublisherSchedulerTest.run() enqueue schedule_id for active schedules in queue named activeSchedule" />
+        <item itemvalue="Gradle.AccessRequestPublisherSchedulerTest.run() enqueue request_id for requests not yet scheduled in queue named accessRequest" />
+        <item itemvalue="Gradle.ActiveSchedulesPublisherTest" />
+        <item itemvalue="Gradle.AccessRequestPublisherTest.publish() enqueue request_id in queue named accessRequest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="641a5237-1074-408d-8825-833afb5b0a24" name="Default Changelist" comment="" />
+      <created>1612049683190</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612049683190</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2316" y="160" key="#Main" timestamp="1612628207928">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2316" y="160" key="#Main/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1612628207928" />
+    <state x="2128" y="121" key="#Project_Structure" timestamp="1613669025032">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2128" y="121" key="#Project_Structure/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1613669025032" />
+    <state x="2344" y="139" key="#Tests_in_'Udemy-Account-Manager.test'" timestamp="1613668715040">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2344" y="139" key="#Tests_in_'Udemy-Account-Manager.test'/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1613668715040" />
+    <state x="2453" y="248" key="#com.intellij.ide.util.MemberChooser" timestamp="1613227481035">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2453" y="248" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1613227481035" />
+    <state x="2379" y="236" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1613668721476">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2379" y="236" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1613668721476" />
+    <state x="2174" y="471" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1612062170965">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2174" y="471" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1612062170965" />
+    <state x="2367" y="416" width="737" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1612062286453">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2367" y="416" width="737" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1612062286452" />
+    <state x="2369" y="291" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612627951676">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2369" y="291" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1612627951676" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom" timestamp="1614288662403">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="305" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.0.1920.1080@0.0.1680.1050" timestamp="1613753315911" />
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614176425470" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom/0.0.1680.986/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612078525644" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614288662403" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom/0.23.1680.963/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003521239" />
+    <state width="1878" height="376" key="GridCell.Tab.0.bottom/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612482441010" />
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom/0.23.1680.965/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612628820506" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center" timestamp="1614288662399">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="305" key="GridCell.Tab.0.center/0.0.1680.1050/1680.0.1920.1080@0.0.1680.1050" timestamp="1613753315909" />
+    <state width="1878" height="305" key="GridCell.Tab.0.center/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614176425468" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center/0.0.1680.986/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612078525643" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614288662399" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center/0.23.1680.963/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003521236" />
+    <state width="1878" height="376" key="GridCell.Tab.0.center/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612482440980" />
+    <state width="1878" height="305" key="GridCell.Tab.0.center/0.23.1680.965/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612628820504" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left" timestamp="1614288662398">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="305" key="GridCell.Tab.0.left/0.0.1680.1050/1680.0.1920.1080@0.0.1680.1050" timestamp="1613753315908" />
+    <state width="1878" height="305" key="GridCell.Tab.0.left/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614176425466" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left/0.0.1680.986/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612078525643" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614288662398" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left/0.23.1680.963/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003521235" />
+    <state width="1878" height="376" key="GridCell.Tab.0.left/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612482440979" />
+    <state width="1878" height="305" key="GridCell.Tab.0.left/0.23.1680.965/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612628820503" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right" timestamp="1614288662401">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1638" height="305" key="GridCell.Tab.0.right/0.0.1680.1050/1680.0.1920.1080@0.0.1680.1050" timestamp="1613753315910" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614176425469" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right/0.0.1680.986/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612078525644" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614288662401" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right/0.23.1680.963/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003521313" />
+    <state width="1878" height="376" key="GridCell.Tab.0.right/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612482440981" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right/0.23.1680.965/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612628820505" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom" timestamp="1614288662410">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614103438824" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.0.1680.986/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612078525647" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614288662410" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.23.1680.963/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003521243" />
+    <state width="1878" height="376" key="GridCell.Tab.1.bottom/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612482441014" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center" timestamp="1614288662407">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614103438822" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.0.1680.986/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612078525646" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614288662407" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.23.1680.963/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003521241" />
+    <state width="1878" height="376" key="GridCell.Tab.1.center/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612482441012" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left" timestamp="1614288662405">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614103438821" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.0.1680.986/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612078525645" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614288662405" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.23.1680.963/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003521240" />
+    <state width="1878" height="376" key="GridCell.Tab.1.left/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612482441011" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right" timestamp="1614288662409">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614103438823" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.0.1680.986/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612078525646" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614288662409" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.23.1680.963/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003521242" />
+    <state width="1878" height="376" key="GridCell.Tab.1.right/0.23.1680.963/1680.23.1920.1057@1680.23.1920.1057" timestamp="1612482441013" />
+    <state x="2149" y="179" key="SettingsEditor" timestamp="1613670353102">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2149" y="179" key="SettingsEditor/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1613670353102" />
+    <state x="2149" y="179" key="SettingsEditor/0.23.1680.1027/1680.0.1920.1080@1680.0.1920.1080" timestamp="1612143226136" />
+    <state x="2346" y="297" width="610" height="486" key="find.popup" timestamp="1614003293031">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2346" y="297" width="610" height="486" key="find.popup/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1614003293031" />
+    <state x="2063" y="162" key="new project wizard" timestamp="1613668648443">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2063" y="162" key="new project wizard/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1613668648443" />
+    <state x="2305" y="255" width="670" height="675" key="run.anything.popup" timestamp="1612629885540">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2305" y="255" width="670" height="675" key="run.anything.popup/0.0.1680.1050/1680.0.1920.1080@1680.0.1920.1080" timestamp="1612629885540" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/review/global/SpringWebApp/publishers/AccessRequestPublisher.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Udemy_Account_Manager$ScheduleServiceTest.ic" NAME="ScheduleServiceTest Coverage Results" MODIFIED="1614089428494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Udemy_Account_Manager$AccessRequestPublisherTest_publish___enqueue_request_id_in_queue_named_accessRequest.ic" NAME="AccessRequestPublisherTest.publish() enqueue request_id in queue named accessRequest Coverage Results" MODIFIED="1614103438508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Udemy_Account_Manager$AccountServiceImplTest.ic" NAME="AccountServiceImplTest Coverage Results" MODIFIED="1614004768608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Udemy_Account_Manager$Tests_in__Udemy_Account_Manager_test_.ic" NAME="Tests in 'Udemy-Account-Manager.test' Coverage Results" MODIFIED="1614176425277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

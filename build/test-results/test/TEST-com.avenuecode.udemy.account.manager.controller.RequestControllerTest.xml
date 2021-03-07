@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avenuecode.udemy.account.manager.controller.RequestControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-24T14:20:41" hostname="AC-michelfonseca.local" time="0.724">
+  <properties/>
+  <testcase name="create access request" classname="com.avenuecode.udemy.account.manager.controller.RequestControllerTest" time="0.724"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

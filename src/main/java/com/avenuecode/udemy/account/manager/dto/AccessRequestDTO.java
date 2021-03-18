@@ -1,6 +1,6 @@
 package com.avenuecode.udemy.account.manager.dto;
 
-import com.sun.istack.NotNull;
+import lombok.NonNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,14 +11,14 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AccessRequestDTO {
-    @NotNull
+    @NonNull
     private String email;
-    @NotNull
+    @NonNull
     private String seniority;
-    @NotNull
+    @NonNull
     private String technology;
-    @NotNull
+    @NonNull
     private String hours;
-    @NotNull
+    @NonNull
     private String goal;
 }

@@ -18,6 +18,10 @@ avenue-code:
 server:
   port: 8000
 
+logging:
+  level:
+    com.avenuecode.udemy.account.manager.service: DEBUG
+
 spring:
   h2:
     console:

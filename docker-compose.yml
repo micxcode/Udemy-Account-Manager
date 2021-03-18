@@ -16,7 +16,6 @@ services:
     image: udemy-account-manager:latest
     environment:
       - SPRING_PROFILES_ACTIVE=dev,docker
-      - stenv=docker
       - type=localhost
       - remote.host=udemy-account-manager.docker.com
     ports:

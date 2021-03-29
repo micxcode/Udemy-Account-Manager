@@ -2,6 +2,7 @@ package com.avenuecode.udemy.account.manager.service;
 
 import com.avenuecode.udemy.account.manager.dto.AccessRequestIdDTO;
 import com.avenuecode.udemy.account.manager.dto.ScheduleIdDTO;
+import com.avenuecode.udemy.account.manager.enums.UserTemplate;
 import com.avenuecode.udemy.account.manager.repository.AccountRepository;
 import com.avenuecode.udemy.account.manager.repository.RequestRepository;
 import com.avenuecode.udemy.account.manager.repository.ScheduleRepository;
@@ -35,7 +36,7 @@ public class ScheduleService {
     }
 
     public void createSchedule(final AccessRequestIdDTO accessRequestIdDTO){
-        log.debug("Received access request with id={}", accessRequestIdDTO.getId());
+        log.info("Received access request with id={}", accessRequestIdDTO.getId());
         //Find request
         Optional<Request> savedRequest = requestRepository.findById(accessRequestIdDTO.getId());
 
@@ -59,6 +60,7 @@ public class ScheduleService {
             return;
         }
 
+        //TODO: Include a sort of Lock for this, as other threads might try to use the same account
         //Gets the first account available
         Account account = accounts.get(0);
 
@@ -80,16 +82,17 @@ public class ScheduleService {
             requestRepository.save(request);
         }
         catch (Exception e){
+            //TODO: In cases like this should we throw the error or a log is enough?
             log.error("Error scheduling account={} for email={}", account.getEmail(), EmailUtils.maskEmail(request.getEmail()), e);
-            throw e;
+            return;
         }
 
-        //TODO: Include logs
-
-        //TODO: Notify user that his account is ready to use
+        //Notify user that his account is ready to use
+        MailingService.notifyUser(request.getEmail(), UserTemplate.SCHEDULE_READY);
     }
 
     public void checkSchedule(final ScheduleIdDTO scheduleIdDTO){
+        log.info("Checking schedule of id={}", scheduleIdDTO.getId());
         //Find schedule
         Optional<Schedule> savedSchedule = scheduleRepository.findById(scheduleIdDTO.getId());
 
@@ -98,6 +101,7 @@ public class ScheduleService {
                     String.format("Could not find schedule of id '%s'!", scheduleIdDTO.getId()));
         }
 
+        log.debug("Schedule found on database");
         Schedule schedule = savedSchedule.get();
 
         if(Boolean.FALSE.equals(schedule.getActive())){
@@ -106,11 +110,13 @@ public class ScheduleService {
         }
 
         //Check end date
+        log.debug("Checking end date for schedule");
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
         if(sdf.format(new Date()).equals(sdf.format(schedule.getEnd()))){
             log.info("Schedule of id={} has expired", schedule.getId());
 
             try{
+                log.debug("Deactivating schedule");
                 schedule.setActive(false);
                 Account account = schedule.getAccount();
                 account.setExpired(true);
@@ -118,16 +124,19 @@ public class ScheduleService {
                 scheduleRepository.save(schedule);
             }
             catch (Exception e){
+                //TODO: In cases like this should we throw the error or a log is enough?
                 log.error("Error deactivating schedule of id={} for account={}", schedule.getId(), schedule.getAccount().getEmail(), e);
-                throw e;
+                return;
             }
-            //TODO: Include logs
 
-            //TODO: Notify users their access has expired
+            // Notify users their access has expired
+            MailingService.notifyUser(schedule.getScheduledFor(), UserTemplate.SCHEDULE_EXPIRED);
 
-            //TODO: Notify account managers so they can reset the password
+            //Notify account managers so they can reset the password
+            MailingService.notifyAccountManagers(schedule.getAccount().getEmail());
         }
-
-
+        else{
+            log.info("Schedule of id={} hasn't expired yet", scheduleIdDTO.getId());
+        }
     }
 }

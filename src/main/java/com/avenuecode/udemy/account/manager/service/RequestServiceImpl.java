@@ -27,20 +27,21 @@ public class RequestServiceImpl implements RequestService{
 
     @Override
     public ResponseEntity accessRequest(final AccessRequestDTO accessRequestDTO) {
-        if (log.isDebugEnabled()){
-            log.debug("Access Request received for email={}", EmailUtils.maskEmail(accessRequestDTO.getEmail()));
-        }
+        log.info("Access Request received for email={}", EmailUtils.maskEmail(accessRequestDTO.getEmail()));
 
         Request request = new Request(accessRequestDTO.getEmail(), accessRequestDTO.getSeniority(),
                 accessRequestDTO.getTechnology(), accessRequestDTO.getHours(), accessRequestDTO.getGoal());
 
         try{
+            log.debug("Saving new request={}", request);
             requestRepository.save(request);
         }
         catch (Exception e){
             log.error("Error saving request from email={} on database.", EmailUtils.maskEmail(accessRequestDTO.getEmail()), e);
             return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
         }
+
+        log.info("Request created successfully");
 
         accessRequestPublisher.publish(request);
 

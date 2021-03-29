@@ -25,9 +25,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public ResponseEntity addAccount(final AccountDTO accountDTO) {
-        if (log.isDebugEnabled()){
-            log.debug("Registering new account={}", accountDTO.getEmail());
-        }
+        log.info("Registering new account={}", accountDTO.getEmail());
 
         Account existingAccount = accountRepository.findByEmail(accountDTO.getEmail());
 
@@ -38,7 +36,7 @@ public class AccountServiceImpl implements AccountService {
 
         try{
             Account account = new Account(accountDTO.getEmail(), accountDTO.getPassword());
-
+            log.debug("Saving new account={}", account);
             accountRepository.save(account);
         }
         catch (Exception e){
@@ -46,7 +44,7 @@ public class AccountServiceImpl implements AccountService {
             return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
-        log.info("Account={} registered successfully ", accountDTO.getEmail());
+        log.info("Account={} registered successfully", accountDTO.getEmail());
         return new ResponseEntity(HttpStatus.CREATED);
     }
 

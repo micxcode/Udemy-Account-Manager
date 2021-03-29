@@ -11,13 +11,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import java.io.Serializable;
 import java.util.Date;
+import java.util.Objects;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Schedule {
+public class Schedule implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -71,7 +73,7 @@ public class Schedule {
 
         final Schedule schedule = (Schedule) o;
 
-        return id != null ? id.equals(schedule.id) : schedule.id == null;
+        return Objects.equals(id, schedule.id);
     }
 
     @Override

@@ -35,6 +35,7 @@ public class ScheduleService {
     }
 
     public void createSchedule(final AccessRequestIdDTO accessRequestIdDTO){
+        log.debug("Received access request with id={}", accessRequestIdDTO.getId());
         //Find request
         Optional<Request> savedRequest = requestRepository.findById(accessRequestIdDTO.getId());
 
@@ -44,6 +45,7 @@ public class ScheduleService {
         }
 
         Request request = savedRequest.get();
+        log.debug("Request found on database");
 
         if(Boolean.TRUE.equals(request.getScheduled())){
             log.info("Request of id={} is already scheduled", accessRequestIdDTO.getId());

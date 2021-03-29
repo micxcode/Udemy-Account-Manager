@@ -64,18 +64,22 @@ public class AccountServiceImpl implements AccountService {
             return new ResponseEntity(HttpStatus.BAD_REQUEST);
         }
 
-        Optional<Account> account = accountRepository.findById(accountId);
-
-        if(!account.isPresent() || !account.get().getEmail().equals(accountDTO.getEmail())){
-            log.info("Couldn't find Account={} for id={}", accountDTO.getEmail(), id);
-            return new ResponseEntity(HttpStatus.BAD_REQUEST);
-        }
+        //TODO: Is this needed?
+//        Optional<Account> account = accountRepository.findById(accountId);
+//
+//        if(!account.isPresent() || !account.get().getEmail().equals(accountDTO.getEmail())){
+//            log.info("Couldn't find Account={} for id={}", accountDTO.getEmail(), id);
+//            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+//        }
 
         try{
-            account.get().setPassword(accountDTO.getPassword());
-            account.get().setScheduled(false);
-            account.get().setExpired(false);
-            accountRepository.save(account.get());
+//            account.get().setPassword(accountDTO.getPassword());
+//            account.get().setScheduled(false);
+//            account.get().setExpired(false);
+//            accountRepository.save(account.get());
+            //TODO: Is this better?
+            accountRepository.updateAccount(accountDTO.getPassword(), accountId);
+
         }
         catch (Exception e){
             log.error("Error updating password for account={}", accountDTO.getEmail(), e);
@@ -105,5 +109,22 @@ public class AccountServiceImpl implements AccountService {
             accountDTOList.add(accountDTO);
         }
         return accountDTOList;
+    }
+
+    private Account parseAndGetAccountById(final String id){
+        Long accountId;
+
+        try{
+            log.debug("Parsing id={}", id);
+            accountId = Long.parseLong(id);
+        }
+        catch (NumberFormatException e){
+            log.warn("Couldn't parse id={}", id);
+            return null;
+        }
+
+        Optional<Account> account = accountRepository.findById(accountId);
+
+        return account.orElse(null);
     }
 }

@@ -19,7 +19,6 @@ repositories {
 	mavenCentral()
 }
 
-apply plugin: 'java'
 sourceSets {
 	integTest {
 		java {
@@ -30,6 +29,25 @@ sourceSets {
 		resources.srcDir file('src/integTest/resources')
 	}
 }
+//configurations {
+//	integrationTestCompile.extendsFrom testCompile
+//	integrationTestRuntime.extendsFrom testRuntime
+//}
+//def integTest = sourceSets.create("integTest")
+
+//dependencies {
+//	integTestImplementation(project)
+//}
+//def integTestTask = tasks.register("integTest", Test) {
+//	description = 'Runs the integration tests.'
+//	group = "verification"
+//	testClassesDirs = integTest.output.classesDirs
+//	classpath = integTest.runtimeClasspath
+//	mustRunAfter(tasks.named('test'))
+//}
+//tasks.named('check') {
+//	dependsOn(integTestTask)
+//}
 apply plugin: 'idea'
 idea {
 	module {
@@ -45,6 +63,11 @@ dependencies {
 	implementation 'org.springframework:spring-jms'
 	implementation 'org.messaginghub:pooled-jms'
 
+	// Email
+	implementation 'org.springframework:spring-context'
+	implementation 'org.springframework:spring-context-support'
+	implementation 'com.sun.mail:javax.mail:1.6.2'
+
 	// Swagger
 	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 
@@ -55,9 +78,13 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-activemq'
 	testImplementation 'org.springframework:spring-jms'
+	integTestImplementation 'org.springframework.boot:spring-boot-starter-web'
 	integTestImplementation 'org.springframework.boot:spring-boot-starter-test'
+	integTestImplementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	integTestImplementation 'org.springframework.boot:spring-boot-starter-activemq'
 	integTestImplementation 'org.springframework:spring-jms'
+	integTestImplementation 'org.messaginghub:pooled-jms'
+	integTestImplementation 'org.postgresql:postgresql:42.2.5'
 
 	// Spock unit test
 	testImplementation("org.codehaus.groovy:groovy-all:2.5.10")
@@ -86,10 +113,20 @@ task dockerBuild(type: Exec) {
 }
 
 // Integration test task
-//task integTest(type: Test) {
-//	testClassesDir = sourceSets.integTest.output.classesDir
-//	classpath = sourceSets.integTest.runtimeClasspath
-//	testLogging {
-//		events "passed", "skipped", "failed"
-//	}
+task integTest(type: Test) {
+	testClassesDirs = sourceSets.integTest.output.classesDirs
+	classpath = sourceSets.integTest.runtimeClasspath
+	testLogging {
+		events "passed", "skipped", "failed"
+	}
+}
+//def integTestTask = tasks.register("integTest", Test) {
+//	description = 'Runs the integration tests.'
+//	group = "verification"
+//	testClassesDirs = integTest.output.classesDirs
+//	classpath = integTest.runtimeClasspath
+//	mustRunAfter(tasks.named('test'))
+//}
+//tasks.named('check') {
+//	dependsOn(integTestTask)
 //}

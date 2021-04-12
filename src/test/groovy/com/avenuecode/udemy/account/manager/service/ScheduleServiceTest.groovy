@@ -71,7 +71,7 @@ class ScheduleServiceTest extends Specification{
         scheduleService.createSchedule(accessRequestIdDTO)
 
         then:
-        thrown Exception
+        0 * MailingService.notifyUser(*_)
     }
 
     def "createSchedule() - Schedule created"() {
@@ -151,7 +151,8 @@ class ScheduleServiceTest extends Specification{
         scheduleService.checkSchedule(scheduleIdDTO)
 
         then:
-        thrown Exception
+        0 * MailingService.notifyUser(*_)
+        0 * MailingService.notifyAccountManagers(*_)
     }
 
     def "checkSchedule() - Schedule expired"() {

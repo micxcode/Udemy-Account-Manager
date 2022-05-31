@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  activemq:
+    image: rmohr/activemq:5.14.5-alpine
+    hostname: activemq
+    ports:
+      - "8161:8161"
+      - "61616:61616"
+    volumes:
+      - /opt/activemq/data
+
+  udemy-account-manager:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    image: udemy-account-manager:latest
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev,docker
+      - type=localhost
+      - remote.host=udemy-account-manager.docker.com
+    ports:
+      - "8000:8000"
+      - "8003:8003"
+    networks:
+      default:
+        aliases:
+          - udemy-account-manager.docker.com
+    depends_on:
+      - activemq
+
+networks:
+  default:
+    driver: bridge

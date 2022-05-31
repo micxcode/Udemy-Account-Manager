@@ -1,0 +1,51 @@
+spring:
+  database:
+    driverClassName: org.postgresql.Driver
+  datasource:
+    url: jdbc:postgresql://localhost:54321/postgres
+#    username: postgres
+#    password: postgres
+#  jpa:
+#    properties:
+#      hibernate:
+#        default_schema: public
+#  datasource:
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 1
+      idle-timeout: 10
+#    url: jdbc:postgresql://localhost:5433/postgres
+#    driverClassName: org.postgresql.Driver
+#    username: admin
+#    password: freel00k
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+#    hibernate:
+#      ddl-auto: create-drop
+    database: POSTGRESQL
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate:
+#        default_schema: public
+#        temp:
+#          use_jdbc_metadata_defaults: false
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+
+avenue-code:
+  udemy:
+    jms:
+      broker-url: vm://localhost?broker.persistent=false
+      max-connections: 100
+      idle-timeout: 6000
+      accessRequest:
+        queueName: accessRequest
+        pollingInterval: 30000
+        scheduler:
+          enabled: false
+      activeSchedule:
+        queueName: activeSchedule
+        pollingInterval: 60000
+        scheduler:
+          enabled: false

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avenuecode.udemy.account.manager.publishers.AccessRequestPublisherSchedulerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-24T14:20:42" hostname="AC-michelfonseca.local" time="0.449">
+  <properties/>
+  <testcase name="run() enqueue request_id for requests not yet scheduled in queue named accessRequest" classname="com.avenuecode.udemy.account.manager.publishers.AccessRequestPublisherSchedulerTest" time="0.449"/>
+  <system-out><![CDATA[11:20:42.835 [Test worker] INFO com.avenuecode.udemy.account.manager.publishers.AccessRequestPublisherScheduler - Initializing AccessRequestPublisherScheduler...
+11:20:42.871 [Test worker] INFO com.avenuecode.udemy.account.manager.publishers.AccessRequestPublisher - Publishing request 'Request{id=1, email='null', seniority='null', technology='null', hours='null', goal='null', created=null, scheduled=null}' to 'accessRequest'
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

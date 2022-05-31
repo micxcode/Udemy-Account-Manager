@@ -1,0 +1,14 @@
+# idea
+.idea/
+out/
+*.iml
+
+# osx
+.DS_Store
+
+# gradle
+.gradle/
+build/
+
+# docker
+mnt/

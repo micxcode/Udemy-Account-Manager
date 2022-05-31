@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avenuecode.udemy.account.manager.publishers.ActiveSchedulesPublisherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-24T14:20:42" hostname="AC-michelfonseca.local" time="0.015">
+  <properties/>
+  <testcase name="publish() enqueue schedule_id in queue named activeSchedule" classname="com.avenuecode.udemy.account.manager.publishers.ActiveSchedulesPublisherTest" time="0.015"/>
+  <system-out><![CDATA[11:20:42.926 [Test worker] INFO com.avenuecode.udemy.account.manager.publishers.ActiveSchedulesPublisher - Publishing active schedule 'Schedule{id=1, start=null, end=null, scheduledFor='null', seniority='null', technology='null', hours='null', goal='null', active=null}' to 'activeSchedule'
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

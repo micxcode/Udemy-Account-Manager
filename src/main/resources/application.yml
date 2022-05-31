@@ -1,0 +1,30 @@
+avenue-code:
+  udemy:
+    jms:
+      broker-url: tcp://activemq:61616
+      max-connections: 100
+      idle-timeout: 6000
+      accessRequest:
+        queueName: accessRequest
+        pollingInterval: 30000
+#        scheduler:
+#          enabled: false
+      activeSchedule:
+        queueName: activeSchedule
+        pollingInterval: 60000
+#        scheduler:
+#          enabled: false
+
+server:
+  port: 8000
+
+logging:
+  level:
+    com.avenuecode.udemy.account.manager.service: DEBUG
+
+spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
